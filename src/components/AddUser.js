@@ -45,7 +45,7 @@ const useStyle = makeStyles({
 const initialValues = {
   name: "",
   address:"",
-  hobbies:true,
+  hobbies:"",
   birtdate:"",
   female:false,
   male:false,
@@ -167,7 +167,7 @@ function AddUser() {
           <Checkbox
           onChange={(e) => onValueChange(e)}
         name="hobbies"
-        value={hobbies}
+        value="reading"
         
               />
              }
@@ -178,7 +178,7 @@ function AddUser() {
           <Checkbox
           onChange={(e) => onValueChange(e)}
         name="hobbies"
-        value={hobbies}
+        value="Gaming"
        
               />
              }
@@ -189,7 +189,7 @@ function AddUser() {
           <Checkbox
           onChange={(e) => onValueChange(e)}
         name="hobbies"
-        value={hobbies}
+        value="Travelling"
               />
              }
            label="Travelling"/>
@@ -198,7 +198,7 @@ function AddUser() {
               control={
           <Checkbox
           onChange={(e) => onValueChange(e)}
-        name="SomeName"
+        name="hobbies"
         value="SomeValue"
               />
              }
