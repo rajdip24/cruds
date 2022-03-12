@@ -26,6 +26,10 @@ function App() {
 }
 
 export default App;
+// TO Run the app follow below steps
+// 1.npm run dev
+// 2.npm start
+// Here these data is stored into the db.json file
 // npm run json-server
 // concurrently -we can use 2 commands at a time in terminal
 // to start the server write npm run dev because we used the concurrent to store the data

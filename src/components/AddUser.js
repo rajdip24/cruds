@@ -45,7 +45,7 @@ const useStyle = makeStyles({
 const initialValues = {
   name: "",
   address:"",
-  hobbies:"",
+  hobbies:true,
   birtdate:"",
   female:false,
   male:false,
@@ -165,9 +165,10 @@ function AddUser() {
     <FormControlLabel
               control={
           <Checkbox
+          onChange={(e) => onValueChange(e)}
         name="hobbies"
         value={hobbies}
-        onChange={(e) => onValueChange(e)}
+        
               />
              }
            label="Reading"/>
@@ -175,9 +176,10 @@ function AddUser() {
         <FormControlLabel
               control={
           <Checkbox
+          onChange={(e) => onValueChange(e)}
         name="hobbies"
         value={hobbies}
-        onChange={(e) => onValueChange(e)}
+       
               />
              }
            label="Gaming"/>
@@ -185,8 +187,9 @@ function AddUser() {
         <FormControlLabel
               control={
           <Checkbox
-        name="SomeName"
-        value="SomeValue"
+          onChange={(e) => onValueChange(e)}
+        name="hobbies"
+        value={hobbies}
               />
              }
            label="Travelling"/>
@@ -194,6 +197,7 @@ function AddUser() {
         <FormControlLabel
               control={
           <Checkbox
+          onChange={(e) => onValueChange(e)}
         name="SomeName"
         value="SomeValue"
               />

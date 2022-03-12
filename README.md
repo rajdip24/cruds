@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!--commands to start  run the projects 
+1.npm run dev 
+2.npm start
+because here we i have created my own database with the help of json-server
+3.Here i have used the material ui for ui part
+
+-->
