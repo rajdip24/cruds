@@ -1,4 +1,4 @@
-import { Table, TableHead, TableRow ,TableCell, TableBody,makeStyles} from '@material-ui/core';
+import { Table, TableHead, TableRow ,TableCell, TableBody,makeStyles, Button} from '@material-ui/core';
 // Data is renders unders the tablebody
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -69,7 +69,7 @@ function AllUsers() {
    }
 
 
-   const arr = ["id", "name","birtdate", "address","gender","hobbies","college","Delete","update",];
+   const arr = ["ID", "NAME","BIRTHDATE", "ADDRESS","GENDER","HOBBIES","COLLEGE","DELETE","UPDATE",];
     return (
         <Table className={classes.table}>
             <TableHead>
@@ -102,8 +102,8 @@ function AllUsers() {
                      <TableCell>{user.college}</TableCell>
                      
 
-                     <TableCell>{<button onClick={()=>deleteUser(user.id)}>Delete</button>}</TableCell>
-                     <TableCell>{<Link to={"/update/"+user.id}>Update</Link>}</TableCell>
+                     <TableCell>{<Button onClick={()=>deleteUser(user.id)}>Delete</Button>}</TableCell>
+                     <TableCell>{<Button><Link to={"/update/"+user.id}>Update</Link></Button>}</TableCell>
                      
                  </TableRow>
                      )

@@ -3,12 +3,12 @@
     {
       "name": "gourav",
       "address": "At Dubai",
-      "hobbies": "Rikame Dhande",
+      "hobbies": "reading",
       "birtdate": "2022-03-22",
       "female": false,
-      "male": false,
-      "id": 1,
-      "college": "Datta meghe"
+      "male": "male",
+      "college": "Datta meghe",
+      "id": 1
     },
     {
       "name": "Chaitanya",
@@ -16,29 +16,19 @@
       "hobbies": "cooking",
       "birtdate": "2022-03-03",
       "female": false,
-      "male": false,
+      "male": "male",
       "college": "American University of Middle East",
       "id": 2
     },
     {
       "name": "manoj",
       "address": "At mumbai",
-      "hobbies": "kanche",
+      "hobbies": "karate",
       "birtdate": "2022-03-21",
       "female": false,
       "male": "male",
       "college": "Middle East Technical University",
       "id": 3
-    },
-    {
-      "name": "Gagan",
-      "address": "At Banglore",
-      "hobbies": "Cycling",
-      "birtdate": "2022-03-23",
-      "female": false,
-      "male": false,
-      "college": "Middle Tennessee State University",
-      "id": 4
     }
   ]
 }

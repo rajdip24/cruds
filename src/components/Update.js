@@ -87,18 +87,6 @@ function UpdateUser() {
 
   // }
 
-  // useEffect(()=>{
-  //   fetch('http://universities.hipolabs.com/search?name=middle')
-  //   .then((result)=>{
-  //       result.json()
-  //       .then((resp)=>{
-  //       //    console.warn(resp)
-  //           setCollege(resp)
-  //       })
-  //   })
-
-  // },[])
-  // console.warn(college);
 
   const updateUserDetails = async () => {
     // await addUser(user);
@@ -165,13 +153,7 @@ function UpdateUser() {
         <InputLabel>college</InputLabel>
         <Input onChange={(e) => onValueChange(e)} name="phone" value={phone} />
       </FormControl> */}
-      {/* 
-          <Grid item xs={6}>
-            <Field type="checkbox" style={{ width: 40, height: 20 }} name="is_default" />
-            Default &nbsp;
-            <Field type="checkbox" style={{ width: 40, height: 20 }} name="is_admin" />
-            Admin &nbsp;
-          </Grid> */}
+    
       <FormControl>
         <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
         <RadioGroup
@@ -197,47 +179,58 @@ function UpdateUser() {
       </FormControl>
 
       <h2>Hobbies--</h2>
-      <FormControlLabel
-        control={
+    <FormControlLabel
+              control={
           <Checkbox
-            name="hobbies"
-            value={hobbies}
-            onChange={(e) => onValueChange(e)}
-          />
-        }
-        label="Reading"
-      />
-
-      <FormControlLabel
-        control={
-          <Checkbox
-            name="hobbies"
-            value={hobbies}
-            onChange={(e) => onValueChange(e)}
-          />
-        }
-        label="Gaming"
-      />
-
-      <FormControlLabel
-        control={<Checkbox name="SomeName" value="SomeValue" />}
-        label="Travelling"
-      />
-
-      <FormControlLabel
-        control={<Checkbox name="SomeName" value="SomeValue" />}
-        label="Drawing"
-      />
-      <br />
-      <FormControl>
-        <InputLabel>Hobbies</InputLabel>
-
-        <Input
           onChange={(e) => onValueChange(e)}
-          name="hobbies"
-          value={hobbies}
-        />
+        name="hobbies"
+        value="reading"
+        
+              />
+             }
+           label="Reading"/>
+        
+        <FormControlLabel
+              control={
+          <Checkbox
+          onChange={(e) => onValueChange(e)}
+        name="hobbies"
+        value="Gaming"
+       
+              />
+             }
+           label="Gaming"/>
+        
+        <FormControlLabel
+              control={
+          <Checkbox
+          onChange={(e) => onValueChange(e)}
+        name="hobbies"
+        value="Travelling"
+              />
+             }
+           label="Travelling"/>
+        
+        <FormControlLabel
+              control={
+          <Checkbox
+          onChange={(e) => onValueChange(e)}
+        name="hobbies"
+        value="SomeValue"
+              />
+             }
+           label="Drawing"/>
+        <br/>
+      <FormControl>
+
+
+
+        <InputLabel>Hobbies</InputLabel>
+        
+        
+        <Input onChange={(e) => onValueChange(e)} name="hobbies" value={hobbies} />
       </FormControl>
+     
 
       <InputLabel id="demo-controlled-open-select-label">College</InputLabel>
       <Select
